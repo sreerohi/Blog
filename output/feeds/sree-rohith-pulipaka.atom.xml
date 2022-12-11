@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Rohith's blog - Sree Rohith Pulipaka</title><link href="/" rel="alternate"></link><link href="/feeds/sree-rohith-pulipaka.atom.xml" rel="self"></link><id>/</id><updated>2022-12-06T10:20:00-05:00</updated><entry><title>Upcoming Articles</title><link href="/upcoming-articles.html" rel="alternate"></link><published>2022-12-06T10:20:00-05:00</published><updated>2022-12-06T10:20:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-06:/upcoming-articles.html</id><summary type="html">&lt;p&gt;Stay tuned for these articles&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'll be soon posting articles on the following topics, with the hope to both engage and inform the reader:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The SVM Optimization problem and Solution&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PCA Deconstructed: What exactly is Scikit Learn doing?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deriving the expression for Multivariate Gaussian&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optimizers for Deep Learning: the Math&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Page Updates"></category></entry></feed>

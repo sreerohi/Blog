@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Rohith's blog - misc</title><link href="/" rel="alternate"></link><link href="/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2022-12-06T10:20:00-05:00</updated><entry><title>About2</title><link href="/about2.html" rel="alternate"></link><published>2022-12-06T10:20:00-05:00</published><updated>2022-12-06T10:20:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-06:/about2.html</id><summary type="html">&lt;p&gt;About page&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi, I'm Sree Rohith.&lt;/p&gt;
+&lt;p&gt;I'm currently pursuing my M.S. in Electrical Engineering at Columbia University, New York. I worked as a Software Engineer for Xilinx-AMD for two years before.&lt;/p&gt;
+&lt;p&gt;Here's my LinkedIn profile: &lt;a href="https://in.linkedin.com/in/rohith-pulipaka"&gt;https://in.linkedin.com/in/rohith-pulipaka&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I enjoy learning about Deep Learning and aim to have mathematical understanding along with experimental insights.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Current Work:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I am currently researching on understanding attention-based mechanisms with Professor John Wright at Columbia University.&lt;/p&gt;
+&lt;p&gt;Also, I am working on a project that uses Distributionally Robust Optimization to make CNNs robust to Affine Transformations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Course Work:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Accepted into the M.S. Research Specialization at Columbia which enables me to research for an additional semester (Spring 2023).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Courses: Machine Learning, Reinforcement Learning, Sparse Models for High dimensional data, Convex Optimization, Fair and Robust Algorithms for Deep Learning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fun Stuff:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It is well known that Transformers are data hungry. Unless we have access to large compute and data, out model does not learn inductive biases necessary for good generalization. So I'm curating a list of "eco-friendly" Transformers which could be trained on datasets such as CIFAR10, or even MNIST. (For perspective, I trained a tiny Transformer (from DeiT) and could achieve only 91% accuracy on MNIST after a tedious training period.) Here's the list: &lt;a href="https://keen-bobcat-c53.notion.site/4135e6f2259e4b26a3db16a35756ef9e?v=525fedf00daa41a6b8b790992cc540d7"&gt;(Eco-Friendly) Transformers&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry></feed>

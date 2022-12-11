@@ -1,0 +1,66 @@
+#main_title{
+	width: 500px;
+	margin: 0 auto;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#board{
+	/*border: 1px solid black;*/
+	width: 450px;
+	height: 450px;
+	margin: 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#digits{
+	/*border*/: 1px solid black;
+	width: 500px;
+	height: 50px;
+	margin: 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.numberPick{
+	border: 1px solid black;
+	width: 44px;
+	height: 45px;
+	margin: 2px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.selectedNumberPick{
+	border: 1px solid black;
+	background: gray ;
+
+	color: white;
+	width: 44px;
+	height: 45px;
+	margin: 2px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.numberBoard{
+	border: 1px solid gray;
+	width: 48px;
+	height: 48px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+#buttons{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+#reset-button, #solve-button{
+	margin:  2px;
+}
