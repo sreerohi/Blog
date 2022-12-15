@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Rohith's blog</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2022-12-14T00:00:00-05:00</updated><entry><title>The Quadratic form, Eigen Values, Curvature</title><link href="/the-quadratic-form-eigen-values-curvature.html" rel="alternate"></link><published>2022-12-14T00:00:00-05:00</published><updated>2022-12-14T00:00:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-14:/the-quadratic-form-eigen-values-curvature.html</id><summary type="html">&lt;p&gt;This article relates the eigen values of hessian of the quadratic form with the curvature of the function.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sree Rohith Pulipaka&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Rohith's blog - Hessian</title><link href="/" rel="alternate"></link><link href="/feeds/hessian.atom.xml" rel="self"></link><id>/</id><updated>2022-12-14T00:00:00-05:00</updated><entry><title>The Quadratic form, Eigen Values, Curvature</title><link href="/the-quadratic-form-eigen-values-curvature.html" rel="alternate"></link><published>2022-12-14T00:00:00-05:00</published><updated>2022-12-14T00:00:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-14:/the-quadratic-form-eigen-values-curvature.html</id><summary type="html">&lt;p&gt;This article relates the eigen values of hessian of the quadratic form with the curvature of the function.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sree Rohith Pulipaka&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The aim of this article is to relate the eigen values of hessian of the
 quadratic form with the curvature of the function to build an intuition
 between the two.&lt;/em&gt;&lt;/p&gt;
@@ -197,33 +197,4 @@ matrix &lt;span class="math"&gt;\(A\)&lt;/span&gt; even before you plot it!&lt;/
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="Hessian"></category></entry><entry><title>You can play sudoku on this page!</title><link href="/you-can-play-sudoku-on-this-page.html" rel="alternate"></link><published>2022-12-09T00:00:00-05:00</published><updated>2022-12-09T00:00:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-09:/you-can-play-sudoku-on-this-page.html</id><summary type="html">&lt;p&gt;Find out more about approaches to solve Sudoku&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sree Rohith Pulipaka&lt;/p&gt;
-&lt;p&gt;You can find the "Play Sudoku" link on the bottom left corner of the page.
-As I was building my website, I wanted to integrate fun games into it.
-I've seen Sudoku since my childhood in the daily newspaper, attempted to
-solve it by hand a few times but never completed one.&lt;/p&gt;
-&lt;p&gt;That was before I came to know people made computers solve the puzzle!
-It must check for each possible number combination that can fill the
-grid and discard combinations that result in a dead end;
-'systematically'. This systematic process is called backtracking. I used
-this to implement the Sudoku solver in Java Script on this page. Right
-now, I've set up only one puzzle. When I get more time (motivation),
-I'll add difficulty levels and more boards.&lt;/p&gt;
-&lt;p&gt;It should be noted that backtracking is not the only way to solve
-sudoku. We can use an approach in AI called Hill Climbing as well. There
-is a component of these type of algorithms called conflict resolution
-that needs to be dealt with smartly for the solution to scale well.
-There's yet another class of algorithms called genetic algorithms that
-I'm yet to explore. Check back in the future for a comprehensive
-comparison of these methods!&lt;/p&gt;</content><category term="Puzzles"></category></entry><entry><title>Upcoming Articles</title><link href="/upcoming-articles.html" rel="alternate"></link><published>2022-12-06T10:20:00-05:00</published><updated>2022-12-06T10:20:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-06:/upcoming-articles.html</id><summary type="html">&lt;p&gt;Stay tuned for these articles&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'll have the following topics lined up. I shall be soon posting with the hope to both engage and inform the reader:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Optimizers for Deep Learning: The Math&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The SVM Optimization problem and Solution&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;PCA and Probabilistic PCA: Math and SVD approximations&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content><category term="Page Updates"></category></entry></feed>
+&lt;/script&gt;</content><category term="Hessian"></category></entry></feed>

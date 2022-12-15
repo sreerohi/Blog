@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<script type="text/x-mathjax-config">
+  			MathJax.Hub.Config({
+  			"HTML-CSS": {
+  			styles: {
+  			".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+  			},
+  			tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+  			});
+
+</script>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Metadata -->
+	<meta name="description" content="">
+	<meta property="og:description" content="">
+	<meta property="og:title" content="The Quadratic form, Eigen Values, Curvature" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="/the-quadratic-form-eigen-values-curvature.html" />
+		<meta property="og:image" content="/images/rohith.png" />
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Rohith's blog</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="/theme/css/poole.css" />
+		<link rel="stylesheet" href="/theme/css/hyde.css" />
+		<link rel="stylesheet" href="/theme/css/syntax.css" />
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" crossorigin="anonymous">
+
+		<!-- Feeds -->
+<link href="/feeds/hessian.atom.xml" type="application/atom+xml" rel="alternate" title="Rohith's blog Categories Atom Feed" />
+
+		<!-- Analytics -->
+	</head>
+
+	<body class="theme-base-0d">
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+
+			<h1>
+				<a href="/">
+					<img class="profile-picture" src="/images/rohith.png">
+					Rohith's blog
+				</a>
+			</h1>
+			<p class="lead"></p>
+			<p class="lead"> </p>
+			<p></p>
+		</div>
+			<ul class="sidebar-nav">
+					<li><a href="/pages/about.html">About</a></li>
+					<li><a href="/pages/play-sudoku.html">Play Sudoku</a></li>
+			</ul>
+		<nav class="sidebar-social">
+					<a class="sidebar-social-item" href="mailto:sp4016@columbia.edu">
+						<i class="fa fa-envelope"></i>
+					</a>
+					<a class="sidebar-social-item" href="https://in.linkedin.com/in/rohith-pulipaka" target="_blank">
+						<i class="fa fa-linkedin"></i>
+					</a>
+			<!--<a class="sidebar-social-item" href="/None">
+				<i class="fa fa-rss"></i>
+				</a> -->
+		</nav>
+	</div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">The Quadratic form, Eigen Values, Curvature</h1>
+	<span class="post-date">Wed 14 December 2022</span>
+	<p>Sree Rohith Pulipaka</p>
+<p><em>The aim of this article is to relate the eigen values of hessian of the
+quadratic form with the curvature of the function to build an intuition
+between the two.</em></p>
+<p>We consider the quadratic form</p>
+<hr>
+<div class="math">$$f\left( x \right) = x^{T}Ax$$</div>
+<p>   ( 1 )</p>
+<hr>
+<p>Where <span class="math">\(x \in R^{n},\ A\)</span> is a Symmetric matrix. Specifically, if <span class="math">\(A\)</span> is a
+positive definite matrix, each level set of equation ( 1 ) is the
+equations of an n-dimensional hyper ellipse (we shall see why).</p>
+<p><strong>Hessian of the quadratic form</strong></p>
+<div class="math">$$\nabla_{x}\left( x^{T}\text{Ax} \right) = \frac{1}{2}\left( A + A^{T} \right)x = Ax$$</div>
+<hr>
+<div class="math">$${\Rightarrow \nabla}^{2}f(x) = A$$</div>
+<p>   ( 2 )</p>
+<hr>
+<p><strong>Geometry of the quadratic form</strong></p>
+<p>We shall now look at why any level set of ( 1 ) is an n-dimensional
+hyper-ellipse. Firstly, the equation of an n-dimensional hyper-ellipse
+is</p>
+<hr>
+<div class="math">$$\frac{x_{1}^{2}}{a_{1}^{2}} + \ \frac{x_{2}^{2}}{a_{2}^{2}} + \ldots\  + \frac{x_{n}^{2}}{a_{n}^{2}} = 1\ $$</div>
+<p>   ( 3 )</p>
+<hr>
+<p>Where <span class="math">\(x_{i}\)</span> is the <span class="math">\(i^{\text{th}}\)</span> component of <span class="math">\(x\)</span> and each
+<span class="math">\(a_{i}\)</span> is the axis length of the ellipse in the <span class="math">\(\mathbf{e}_{\mathbf{i}}^{\text{th}}\)</span> direction. Here <span class="math">\(\mathbf{e}_{\mathbf{i}}\)</span> is the <span class="math">\(i^{\text{th}}\)</span> canonical basis
+vector for <span class="math">\(R^{n}\)</span>. (For example, in <span class="math">\(R^{3}\)</span>,
+<span class="math">\(\mathbf{e}_{\mathbf{1}}\mathbf{= \ }\widehat{i},\ \mathbf{e}_{\mathbf{2}}\mathbf{=}\widehat{j},\mathbf{\ }\mathbf{e}_{\mathbf{3}}\mathbf{\ }\mathbf{=}\widehat{k}\)</span>).</p>
+<p>In 2 dimensions, <span class="math">\(a_{1},\ a_{2}\)</span> are called the major and minor axes
+respectively. This hyper ellipse in ( 3 ) has it's axes parallel to the
+canonical directions. In other words, the ellipse is not tilted with
+respect to the coordinate plane.</p>
+<p>Equation ( 3 ) can we re-written as follows:</p>
+<hr>
+<div class="math">$$\begin{bmatrix}              
+  x_{1} &amp; \ldots &amp; x_{n} \\      
+  \end{bmatrix}\begin{bmatrix}   
+  1/a_{1}^{2} &amp; 0 &amp; 0 \\         
+  0 &amp; \ddots &amp; 0 \\              
+  0 &amp; 0 &amp; 1/a_{n}^{2} \\         
+  \end{bmatrix}\begin{bmatrix}   
+  x_{1} \\                       
+   \vdots \\                     
+  x_{n} \\                       
+  \end{bmatrix} = 1$$</div>
+<p>            ( 4 )</p>
+<hr>
+<p>Which looks a lot like our quadratic form ( 1 ). However, the matrix <span class="math">\(A\)</span>
+in ( 1 ) need not be diagonal, but it needs to be positive definite for
+its level sets to represent an ellipse. Is there a way to get <span class="math">\(A\)</span> into
+the diagonal form? Spectral Theorem to the rescue! For any symmetric
+matrix <span class="math">\(A\)</span>, we have an orthogonal matrix <span class="math">\(U\)</span> and a diagonal matrix
+<span class="math">\(\Lambda\)</span> such that</p>
+<hr>
+<div class="math">$$A = U\Lambda U^{T}$$</div>
+<p>   ( 5 )</p>
+<hr>
+<p>Substituting ( 5 ) in ( 1 ) and equating <span class="math">\(f\left( x \right) = 1\)</span>,</p>
+<div class="math">$$x^{T}U\Lambda U^{T}x = 1$$</div>
+<p>The <span class="math">\(\alpha\)</span>-level set of
+<span class="math">\(f\left( x \right) = \left\{ \text{x } \right|f\left( x \right) = \ x^{T}Ax = \ \alpha\}\)</span>.
+Here for demonstration, we have selected <span class="math">\(\alpha = 1\)</span>.</p>
+<p>If we let <span class="math">\(y = U^{T}x\)</span>, we see that we arrive at the same form as ( 4 ):</p>
+<hr>
+<div class="math">$$y^{T}\Lambda y = 1$$</div>
+<p>   ( 6 )</p>
+<hr>
+<p>This is the standard form of the ellipse in the new variable <span class="math">\(y\)</span>. But
+what does <span class="math">\(y = U^{T}x\)</span> represent? It represents a rotation of
+coordinates from old coordinates <span class="math">\(x\)</span> to new coordinates <span class="math">\(y\)</span>.</p>
+<p>Why? If we recall, rotation matrices are orthogonal, and their
+determinant is 1.</p>
+<p>Definition of an orthogonal matrix: If <span class="math">\(U\)</span> is an orthogonal matrix,
+<span class="math">\(UU^{T} = \ U^{T}U = I\)</span> . This means that <span class="math">\(det(U)\)</span> could be
+<span class="math">\(\pm 1 \Rightarrow\)</span> Rotational Matrices are a subset of the set of
+Orthogonal matrices.</p>
+<p>We now need to show that we can pick a <span class="math">\(U\)</span> in ( 5 ) whose determinant is
+1. (We can pick a <span class="math">\(U\)</span> because spectral theorem does not say that it is
+unique, only that it is orthogonal.)</p>
+<p>If we end up picking a <span class="math">\(U\)</span> such that <span class="math">\(\det\left( U \right) = - 1\)</span>, form
+matrix </p>
+<div class="math">$$V = U\begin{bmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; \ddots &amp; 0 \\
+0 &amp; 0 &amp; - 1 \\
+\end{bmatrix} 
+\Rightarrow \det\left( V \right) = 1$$</div>
+<p>.
+Then, we can see that <span class="math">\(A = V\Lambda V^{T}\)</span>. Thus <span class="math">\(V\)</span> is also allowed as the orthogonal
+matrix in ( 5 ). Therefore, we can pick a U which represents a rotation
+matrix and hence <span class="math">\(y = U^{T}x\)</span> represents rotation of coordinates. This
+means that in the rotated(new) coordinates, our hyper ellipse is
+parallel to the new canonical directions This then means that in the
+untransformed coordinates (variable <span class="math">\(x\)</span>), the axes of the hyper-ellipse
+are not parallel to the canonical directions <span class="math">\(\mathbf{e}_{\mathbf{i}}\)</span>.</p>
+<p>Now we shall take the last step of this article: see the relation
+between the eigen values of <span class="math">\(A\)</span> and curvature of <span class="math">\(f(x)\)</span>!</p>
+<p><strong>Relation between curvature and hessian</strong></p>
+<p>We are almost there. Comparing ( 6 ) with ( 5 ), we also see that the
+lengths of the axes of the ellipse are equal to the inverse of the
+square root of the eigen value, i.e.</p>
+<hr>
+<div class="math">$$a_{i} = \frac{1}{\sqrt{}\lambda_{i}}$$</div>
+<p>   ( 7 )</p>
+<hr>
+<p>For <span class="math">\(\alpha \neq 1,\)</span> the axes lengths scale by <span class="math">\(\alpha\)</span>. Therefore, it
+the eigen values of <span class="math">\(A\)</span> are similar in value to each other,
+hyper-ellipse of each level-set will be less skewed and looks like a
+hyper-sphere, since axes lengths are similar and vice-versa.</p>
+<p>Consider two cases such that <span class="math">\(A = A_{1}\)</span> and <span class="math">\(A = A_{2}\)</span> where the eigen
+values of <span class="math">\(A_{1}\)</span> are large and that of <span class="math">\(A_{2}\)</span> are small. This inturn
+means that for the same <span class="math">\(\alpha\)</span>-level set, the axes lengths of the
+quadratic form with <span class="math">\(A_{1}\)</span> are small and that of <span class="math">\(A\_ 2\)</span> are large, due
+to ( 7 ). This implies that the quadratic form wit <span class="math">\(A_{1}\)</span> is a steeper
+bowl than the quadratic form with <span class="math">\(A_{2}\)</span>.</p>
+<p>Thus, if <span class="math">\(A\)</span> has large eigen values, <span class="math">\(f(x)\)</span> given by ( 1 ) is steeper
+that if it had smaller eigenvalues!</p>
+<p><strong>Examples:</strong></p>
+<p><img alt="Chart Description automatically
+generated" src="/images/quadratic_form/image1.png"> <img alt="Table Description automatically
+generated with medium
+confidence" src="/images/quadratic_form/image2.png">
+Images generated on <a href="https://www.geogebra.org/calculator">https://www.geogebra.org/calculator</a>.
+Each of the functions here is a quadratic form in
+<span class="math">\(R^{2},\ x \in R,\ y \in R\)</span>. Use ( 3 ) to see it in the vector form. The
+matrix A for each of these examples is indeed a diagonal matrix. For a
+diagonal matrix, the eigen values are the values on the diagonal itself.
+So for example, the values for <span class="math">\(d(x,y)\)</span> are
+<span class="math">\(\lambda_{1} = \frac{1}{3},\ \lambda_{2} = \frac{1}{4}\)</span>. We can see the
+inverse relationship between the steepness of the function and its eigen
+values.</p>
+<p>For an interactive demonstration of eigen values, checkout:
+<a href="https://demonstrations.wolfram.com/EigenvaluesCurvatureAndQuadraticForms/">https://demonstrations.wolfram.com/EigenvaluesCurvatureAndQuadraticForms/</a>.
+Hope this article helps you predict the function shape based on the
+matrix <span class="math">\(A\)</span> even before you plot it!</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+</div>
+		</div>
+	</body>
+</html>

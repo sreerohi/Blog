@@ -1,16 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Rohith's blog - Sree Rohith Pulipaka</title><link href="/" rel="alternate"></link><link href="/feeds/sree-rohith-pulipaka.atom.xml" rel="self"></link><id>/</id><updated>2022-12-06T10:20:00-05:00</updated><entry><title>Upcoming Articles</title><link href="/upcoming-articles.html" rel="alternate"></link><published>2022-12-06T10:20:00-05:00</published><updated>2022-12-06T10:20:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-06:/upcoming-articles.html</id><summary type="html">&lt;p&gt;Stay tuned for these articles&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'll be soon posting articles on the following topics, with the hope to both engage and inform the reader:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Rohith's blog - Sree Rohith Pulipaka</title><link href="/" rel="alternate"></link><link href="/feeds/sree-rohith-pulipaka.atom.xml" rel="self"></link><id>/</id><updated>2022-12-14T00:00:00-05:00</updated><entry><title>The Quadratic form, Eigen Values, Curvature</title><link href="/the-quadratic-form-eigen-values-curvature.html" rel="alternate"></link><published>2022-12-14T00:00:00-05:00</published><updated>2022-12-14T00:00:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-14:/the-quadratic-form-eigen-values-curvature.html</id><summary type="html">&lt;p&gt;This article relates the eigen values of hessian of the quadratic form with the curvature of the function.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sree Rohith Pulipaka&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The aim of this article is to relate the eigen values of hessian of the
+quadratic form with the curvature of the function to build an intuition
+between the two.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We consider the quadratic form&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="math"&gt;$$f\left( x \right) = x^{T}Ax$$&lt;/div&gt;
+&lt;p&gt;   ( 1 )&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Where &lt;span class="math"&gt;\(x \in R^{n},\ A\)&lt;/span&gt; is a Symmetric matrix. Specifically, if &lt;span class="math"&gt;\(A\)&lt;/span&gt; is a
+positive definite matrix, each level set of equation ( 1 ) is the
+equations of an n-dimensional hyper ellipse (we shall see why).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hessian of the quadratic form&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="math"&gt;$$\nabla_{x}\left( x^{T}\text{Ax} \right) = \frac{1}{2}\left( A + A^{T} \right)x = Ax$$&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class="math"&gt;$${\Rightarrow \nabla}^{2}f(x) = A$$&lt;/div&gt;
+&lt;p&gt;   ( 2 )&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Geometry of the quadratic form&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We shall now look at why any level set of ( 1 ) is an n-dimensional
+hyper-ellipse. Firstly, the equation of an n-dimensional hyper-ellipse
+is&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="math"&gt;$$\frac{x_{1}^{2}}{a_{1}^{2}} + \ \frac{x_{2}^{2}}{a_{2}^{2}} + \ldots\  + \frac{x_{n}^{2}}{a_{n}^{2}} = 1\ $$&lt;/div&gt;
+&lt;p&gt;   ( 3 )&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Where &lt;span class="math"&gt;\(x_{i}\)&lt;/span&gt; is the &lt;span class="math"&gt;\(i^{\text{th}}\)&lt;/span&gt; component of &lt;span class="math"&gt;\(x\)&lt;/span&gt; and each
+&lt;span class="math"&gt;\(a_{i}\)&lt;/span&gt; is the axis length of the ellipse in the &lt;span class="math"&gt;\(\mathbf{e}_{\mathbf{i}}^{\text{th}}\)&lt;/span&gt; direction. Here &lt;span class="math"&gt;\(\mathbf{e}_{\mathbf{i}}\)&lt;/span&gt; is the &lt;span class="math"&gt;\(i^{\text{th}}\)&lt;/span&gt; canonical basis
+vector for &lt;span class="math"&gt;\(R^{n}\)&lt;/span&gt;. (For example, in &lt;span class="math"&gt;\(R^{3}\)&lt;/span&gt;,
+&lt;span class="math"&gt;\(\mathbf{e}_{\mathbf{1}}\mathbf{= \ }\widehat{i},\ \mathbf{e}_{\mathbf{2}}\mathbf{=}\widehat{j},\mathbf{\ }\mathbf{e}_{\mathbf{3}}\mathbf{\ }\mathbf{=}\widehat{k}\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;In 2 dimensions, &lt;span class="math"&gt;\(a_{1},\ a_{2}\)&lt;/span&gt; are called the major and minor axes
+respectively. This hyper ellipse in ( 3 ) has it's axes parallel to the
+canonical directions. In other words, the ellipse is not tilted with
+respect to the coordinate plane.&lt;/p&gt;
+&lt;p&gt;Equation ( 3 ) can we re-written as follows:&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="math"&gt;$$\begin{bmatrix}              
+  x_{1} &amp;amp; \ldots &amp;amp; x_{n} \\      
+  \end{bmatrix}\begin{bmatrix}   
+  1/a_{1}^{2} &amp;amp; 0 &amp;amp; 0 \\         
+  0 &amp;amp; \ddots &amp;amp; 0 \\              
+  0 &amp;amp; 0 &amp;amp; 1/a_{n}^{2} \\         
+  \end{bmatrix}\begin{bmatrix}   
+  x_{1} \\                       
+   \vdots \\                     
+  x_{n} \\                       
+  \end{bmatrix} = 1$$&lt;/div&gt;
+&lt;p&gt;            ( 4 )&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Which looks a lot like our quadratic form ( 1 ). However, the matrix &lt;span class="math"&gt;\(A\)&lt;/span&gt;
+in ( 1 ) need not be diagonal, but it needs to be positive definite for
+its level sets to represent an ellipse. Is there a way to get &lt;span class="math"&gt;\(A\)&lt;/span&gt; into
+the diagonal form? Spectral Theorem to the rescue! For any symmetric
+matrix &lt;span class="math"&gt;\(A\)&lt;/span&gt;, we have an orthogonal matrix &lt;span class="math"&gt;\(U\)&lt;/span&gt; and a diagonal matrix
+&lt;span class="math"&gt;\(\Lambda\)&lt;/span&gt; such that&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="math"&gt;$$A = U\Lambda U^{T}$$&lt;/div&gt;
+&lt;p&gt;   ( 5 )&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Substituting ( 5 ) in ( 1 ) and equating &lt;span class="math"&gt;\(f\left( x \right) = 1\)&lt;/span&gt;,&lt;/p&gt;
+&lt;div class="math"&gt;$$x^{T}U\Lambda U^{T}x = 1$$&lt;/div&gt;
+&lt;p&gt;The &lt;span class="math"&gt;\(\alpha\)&lt;/span&gt;-level set of
+&lt;span class="math"&gt;\(f\left( x \right) = \left\{ \text{x } \right|f\left( x \right) = \ x^{T}Ax = \ \alpha\}\)&lt;/span&gt;.
+Here for demonstration, we have selected &lt;span class="math"&gt;\(\alpha = 1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;If we let &lt;span class="math"&gt;\(y = U^{T}x\)&lt;/span&gt;, we see that we arrive at the same form as ( 4 ):&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="math"&gt;$$y^{T}\Lambda y = 1$$&lt;/div&gt;
+&lt;p&gt;   ( 6 )&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This is the standard form of the ellipse in the new variable &lt;span class="math"&gt;\(y\)&lt;/span&gt;. But
+what does &lt;span class="math"&gt;\(y = U^{T}x\)&lt;/span&gt; represent? It represents a rotation of
+coordinates from old coordinates &lt;span class="math"&gt;\(x\)&lt;/span&gt; to new coordinates &lt;span class="math"&gt;\(y\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Why? If we recall, rotation matrices are orthogonal, and their
+determinant is 1.&lt;/p&gt;
+&lt;p&gt;Definition of an orthogonal matrix: If &lt;span class="math"&gt;\(U\)&lt;/span&gt; is an orthogonal matrix,
+&lt;span class="math"&gt;\(UU^{T} = \ U^{T}U = I\)&lt;/span&gt; . This means that &lt;span class="math"&gt;\(det(U)\)&lt;/span&gt; could be
+&lt;span class="math"&gt;\(\pm 1 \Rightarrow\)&lt;/span&gt; Rotational Matrices are a subset of the set of
+Orthogonal matrices.&lt;/p&gt;
+&lt;p&gt;We now need to show that we can pick a &lt;span class="math"&gt;\(U\)&lt;/span&gt; in ( 5 ) whose determinant is
+1. (We can pick a &lt;span class="math"&gt;\(U\)&lt;/span&gt; because spectral theorem does not say that it is
+unique, only that it is orthogonal.)&lt;/p&gt;
+&lt;p&gt;If we end up picking a &lt;span class="math"&gt;\(U\)&lt;/span&gt; such that &lt;span class="math"&gt;\(\det\left( U \right) = - 1\)&lt;/span&gt;, form
+matrix &lt;/p&gt;
+&lt;div class="math"&gt;$$V = U\begin{bmatrix}
+1 &amp;amp; 0 &amp;amp; 0 \\
+0 &amp;amp; \ddots &amp;amp; 0 \\
+0 &amp;amp; 0 &amp;amp; - 1 \\
+\end{bmatrix} 
+\Rightarrow \det\left( V \right) = 1$$&lt;/div&gt;
+&lt;p&gt;.
+Then, we can see that &lt;span class="math"&gt;\(A = V\Lambda V^{T}\)&lt;/span&gt;. Thus &lt;span class="math"&gt;\(V\)&lt;/span&gt; is also allowed as the orthogonal
+matrix in ( 5 ). Therefore, we can pick a U which represents a rotation
+matrix and hence &lt;span class="math"&gt;\(y = U^{T}x\)&lt;/span&gt; represents rotation of coordinates. This
+means that in the rotated(new) coordinates, our hyper ellipse is
+parallel to the new canonical directions This then means that in the
+untransformed coordinates (variable &lt;span class="math"&gt;\(x\)&lt;/span&gt;), the axes of the hyper-ellipse
+are not parallel to the canonical directions &lt;span class="math"&gt;\(\mathbf{e}_{\mathbf{i}}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Now we shall take the last step of this article: see the relation
+between the eigen values of &lt;span class="math"&gt;\(A\)&lt;/span&gt; and curvature of &lt;span class="math"&gt;\(f(x)\)&lt;/span&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Relation between curvature and hessian&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We are almost there. Comparing ( 6 ) with ( 5 ), we also see that the
+lengths of the axes of the ellipse are equal to the inverse of the
+square root of the eigen value, i.e.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class="math"&gt;$$a_{i} = \frac{1}{\sqrt{}\lambda_{i}}$$&lt;/div&gt;
+&lt;p&gt;   ( 7 )&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;For &lt;span class="math"&gt;\(\alpha \neq 1,\)&lt;/span&gt; the axes lengths scale by &lt;span class="math"&gt;\(\alpha\)&lt;/span&gt;. Therefore, it
+the eigen values of &lt;span class="math"&gt;\(A\)&lt;/span&gt; are similar in value to each other,
+hyper-ellipse of each level-set will be less skewed and looks like a
+hyper-sphere, since axes lengths are similar and vice-versa.&lt;/p&gt;
+&lt;p&gt;Consider two cases such that &lt;span class="math"&gt;\(A = A_{1}\)&lt;/span&gt; and &lt;span class="math"&gt;\(A = A_{2}\)&lt;/span&gt; where the eigen
+values of &lt;span class="math"&gt;\(A_{1}\)&lt;/span&gt; are large and that of &lt;span class="math"&gt;\(A_{2}\)&lt;/span&gt; are small. This inturn
+means that for the same &lt;span class="math"&gt;\(\alpha\)&lt;/span&gt;-level set, the axes lengths of the
+quadratic form with &lt;span class="math"&gt;\(A_{1}\)&lt;/span&gt; are small and that of &lt;span class="math"&gt;\(A\_ 2\)&lt;/span&gt; are large, due
+to ( 7 ). This implies that the quadratic form wit &lt;span class="math"&gt;\(A_{1}\)&lt;/span&gt; is a steeper
+bowl than the quadratic form with &lt;span class="math"&gt;\(A_{2}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Thus, if &lt;span class="math"&gt;\(A\)&lt;/span&gt; has large eigen values, &lt;span class="math"&gt;\(f(x)\)&lt;/span&gt; given by ( 1 ) is steeper
+that if it had smaller eigenvalues!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Chart Description automatically
+generated" src="/images/quadratic_form/image1.png"&gt; &lt;img alt="Table Description automatically
+generated with medium
+confidence" src="/images/quadratic_form/image2.png"&gt;
+Images generated on &lt;a href="https://www.geogebra.org/calculator"&gt;https://www.geogebra.org/calculator&lt;/a&gt;.
+Each of the functions here is a quadratic form in
+&lt;span class="math"&gt;\(R^{2},\ x \in R,\ y \in R\)&lt;/span&gt;. Use ( 3 ) to see it in the vector form. The
+matrix A for each of these examples is indeed a diagonal matrix. For a
+diagonal matrix, the eigen values are the values on the diagonal itself.
+So for example, the values for &lt;span class="math"&gt;\(d(x,y)\)&lt;/span&gt; are
+&lt;span class="math"&gt;\(\lambda_{1} = \frac{1}{3},\ \lambda_{2} = \frac{1}{4}\)&lt;/span&gt;. We can see the
+inverse relationship between the steepness of the function and its eigen
+values.&lt;/p&gt;
+&lt;p&gt;For an interactive demonstration of eigen values, checkout:
+&lt;a href="https://demonstrations.wolfram.com/EigenvaluesCurvatureAndQuadraticForms/"&gt;https://demonstrations.wolfram.com/EigenvaluesCurvatureAndQuadraticForms/&lt;/a&gt;.
+Hope this article helps you predict the function shape based on the
+matrix &lt;span class="math"&gt;\(A\)&lt;/span&gt; even before you plot it!&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Hessian"></category></entry><entry><title>You can play sudoku on this page!</title><link href="/you-can-play-sudoku-on-this-page.html" rel="alternate"></link><published>2022-12-09T00:00:00-05:00</published><updated>2022-12-09T00:00:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-09:/you-can-play-sudoku-on-this-page.html</id><summary type="html">&lt;p&gt;Find out more about approaches to solve Sudoku&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sree Rohith Pulipaka&lt;/p&gt;
+&lt;p&gt;You can find the "Play Sudoku" link on the bottom left corner of the page.
+As I was building my website, I wanted to integrate fun games into it.
+I've seen Sudoku since my childhood in the daily newspaper, attempted to
+solve it by hand a few times but never completed one.&lt;/p&gt;
+&lt;p&gt;That was before I came to know people made computers solve the puzzle!
+It must check for each possible number combination that can fill the
+grid and discard combinations that result in a dead end;
+'systematically'. This systematic process is called backtracking. I used
+this to implement the Sudoku solver in Java Script on this page. Right
+now, I've set up only one puzzle. When I get more time (motivation),
+I'll add difficulty levels and more boards.&lt;/p&gt;
+&lt;p&gt;It should be noted that backtracking is not the only way to solve
+sudoku. We can use an approach in AI called Hill Climbing as well. There
+is a component of these type of algorithms called conflict resolution
+that needs to be dealt with smartly for the solution to scale well.
+There's yet another class of algorithms called genetic algorithms that
+I'm yet to explore. Check back in the future for a comprehensive
+comparison of these methods!&lt;/p&gt;</content><category term="Puzzles"></category></entry><entry><title>Upcoming Articles</title><link href="/upcoming-articles.html" rel="alternate"></link><published>2022-12-06T10:20:00-05:00</published><updated>2022-12-06T10:20:00-05:00</updated><author><name>Sree Rohith Pulipaka</name></author><id>tag:None,2022-12-06:/upcoming-articles.html</id><summary type="html">&lt;p&gt;Stay tuned for these articles&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'll have the following topics lined up. I shall be soon posting with the hope to both engage and inform the reader:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Optimizers for Deep Learning: The Math&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;The SVM Optimization problem and Solution&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;PCA Deconstructed: What exactly is Scikit Learn doing?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Deriving the expression for Multivariate Gaussian&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Optimizers for Deep Learning: the Math&lt;/p&gt;
+&lt;p&gt;PCA and Probabilistic PCA: Math and SVD approximations&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content><category term="Page Updates"></category></entry></feed>
